@@ -144,3 +144,8 @@ nnoremap <C-j> :join <CR> " join line in visual mode
 if filereadable(glob("~/.vimrc.local")) 
     source ~/.vimrc.local
 endif
+
+" Add support for custom project settings
+if filereadable(glob(".project.vimrc")) 
+    source .project.vimrc
+endif
